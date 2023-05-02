@@ -32,6 +32,20 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+//        SceneLoader.getInstance().loadModel("file:///android_asset/your_model.obj", object : SceneLoader.Callback {
+//            override fun onCompleted(node: Node) {
+//                // 3D model loaded successfully
+//            }
+//
+//            override fun onError(s: String) {
+//                // Error loading 3D model
+//            }
+//        })
+//
+//
+//        val scene = arFragment.arSceneView.scene
+//        scene.addChild(node)
+
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
